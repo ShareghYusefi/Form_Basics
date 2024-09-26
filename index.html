@@ -18,13 +18,31 @@
         type="text"
         name="firstname"
         placeholder="type firstname. "
+        required
+      />
+
+      <br />
+      <!-- type email -->
+      <label for="email">Email Address:</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="eg. john.doe@gmail.com"
+        required
       />
 
       <br />
 
       <!-- type number -->
       <label for="age">Age</label>
-      <input id="age" type="number" placeholder="provide your age" />
+      <input
+        id="age"
+        type="number"
+        placeholder="provide your age"
+        min="18"
+        max="120"
+      />
 
       <br />
 
@@ -32,20 +50,29 @@
       <!-- Used when we have a fixed set of options -->
       <!-- type radio share name value so only 1 selection is allowed -->
       <h3 for="shirt_size">Shirt Size</h3>
-      <input type="radio" name="shirt_size" value="small" />Small <br />
-      <input type="radio" name="shirt_size" value="medium" />Medium <br />
-      <input type="radio" name="shirt_size" value="large" />Large <br />
+      <input
+        type="radio"
+        name="shirt_size"
+        value="small"
+        checked
+        required
+      />Small
+      <br />
+      <input type="radio" name="shirt_size" value="medium" required />Medium
+      <br />
+      <input type="radio" name="shirt_size" value="large" required />Large
+      <br />
 
       <br />
 
       <!-- dropdown list using select element -->
       <label for="brand">Brand</label>
-      <select name="brand" id="brand">
-        <option>Nike</option>
-        <option>Adidas</option>
-        <option>Puma</option>
-        <option>Gucci</option>
-        <option>Parada</option>
+      <select name="brand" id="brand" required>
+        <option value="nike">Nike</option>
+        <option value="adidas" selected>Adidas</option>
+        <option value="puma">Puma</option>
+        <option value="gucci">Gucci</option>
+        <option value="prada">Prada</option>
       </select>
 
       <br />
