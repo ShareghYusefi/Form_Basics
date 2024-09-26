@@ -8,53 +8,59 @@
   <body>
     <h1>Forms & Input Elements</h1>
 
-    <!-- input element can be used to collect information -->
-    <!-- We can use "for" & "id" attributes together for input selection  -->
-    <!-- type text used for collecting text data -->
-    <label for="firstname">Firstname:</label>
-    <input
-      id="firstname"
-      type="text"
-      name="firstname"
-      placeholder="type firstname. "
-    />
+    <form action="/process_form.php">
+      <!-- input element can be used to collect information -->
+      <!-- We can use "for" & "id" attributes together for input selection  -->
+      <!-- type text used for collecting text data -->
+      <label for="firstname">Firstname:</label>
+      <input
+        id="firstname"
+        type="text"
+        name="firstname"
+        placeholder="type firstname. "
+      />
 
-    <br />
+      <br />
 
-    <!-- type number -->
-    <label for="age">Age</label>
-    <input id="age" type="number" placeholder="provide your age" />
+      <!-- type number -->
+      <label for="age">Age</label>
+      <input id="age" type="number" placeholder="provide your age" />
 
-    <br />
+      <br />
 
-    <!-- type radio -->
-    <!-- Used when we have a fixed set of options -->
-    <!-- type radio share name value so only 1 selection is allowed -->
-    <h3 for="shirt_size">Shirt Size</h3>
-    <input type="radio" name="shirt_size" value="small" />Small <br />
-    <input type="radio" name="shirt_size" value="medium" />Medium <br />
-    <input type="radio" name="shirt_size" value="large" />Large <br />
+      <!-- type radio -->
+      <!-- Used when we have a fixed set of options -->
+      <!-- type radio share name value so only 1 selection is allowed -->
+      <h3 for="shirt_size">Shirt Size</h3>
+      <input type="radio" name="shirt_size" value="small" />Small <br />
+      <input type="radio" name="shirt_size" value="medium" />Medium <br />
+      <input type="radio" name="shirt_size" value="large" />Large <br />
 
-    <br />
+      <br />
 
-    <!-- dropdown list using select element -->
-    <label for="brand">Brand</label>
-    <select name="brand" id="brand">
-      <option>Nike</option>
-      <option>Adidas</option>
-      <option>Puma</option>
-      <option>Gucci</option>
-      <option>Parada</option>
-    </select>
+      <!-- dropdown list using select element -->
+      <label for="brand">Brand</label>
+      <select name="brand" id="brand">
+        <option>Nike</option>
+        <option>Adidas</option>
+        <option>Puma</option>
+        <option>Gucci</option>
+        <option>Parada</option>
+      </select>
 
-    <br />
+      <br />
 
-    <!-- type checkbox - selecting multiple value -->
-    <h3>Colors</h3>
-    <input type="checkbox" name="colors" value="blue" />Blue <br />
-    <input type="checkbox" name="colors" value="red" />Red <br />
-    <input type="checkbox" name="colors" value="purple" />Purple <br />
-    <input type="checkbox" name="colors" value="aqua" />Aqua <br />
-    <input type="checkbox" name="colors" value="yellow" />Yellow <br />
+      <!-- type checkbox - selecting multiple value -->
+      <h3>Colors</h3>
+      <input type="checkbox" name="colors" value="blue" />Blue <br />
+      <input type="checkbox" name="colors" value="red" />Red <br />
+      <input type="checkbox" name="colors" value="purple" />Purple <br />
+      <input type="checkbox" name="colors" value="aqua" />Aqua <br />
+      <input type="checkbox" name="colors" value="yellow" />Yellow <br />
+
+      <!-- submitting form -->
+      <input type="submit" value="Order Shirt" />
+      <!-- <button type="submit">Order Shirt</button> -->
+    </form>
   </body>
 </html>
