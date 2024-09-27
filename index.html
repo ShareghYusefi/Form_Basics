@@ -4,9 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
+    <!-- External style sheet - used to share styles across documents -->
+    <!-- External styles sheets have the lowest precedence -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Internal style sheet - applies to all elements defined on document -->
+    <!-- Internal styles have the second highest precedence -->
+    <style>
+      label {
+        color: teal;
+      }
+
+      input {
+        background-color: azure;
+      }
+    </style>
   </head>
   <body>
-    <h1>Forms & Input Elements</h1>
+    <!-- Inline styling - directy applying css to elements -->
+    <!-- Inline styles have the highest precedence -->
+    <h1 style="color: blue">Forms & Input Elements</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut, facilis
+      veritatis enim quae eligendi atque dolorum voluptatum illum exercitationem
+      adipisci, autem minima mollitia! Obcaecati odio animi nemo cupiditate
+      natus.
+    </p>
 
     <form action="/process_form.php">
       <!-- input element can be used to collect information -->
