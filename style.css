@@ -5,8 +5,9 @@
 /* select all p elements */
 /* Element selector - specify an element */
 /* Element selectors ( specificty score of 1) */
+/* HSL model: hue, saturation, lightness */
 p {
-  color: red;
+  color: hsla(306, 66%, 49%, 0.8);
   font-size: 20pt;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
@@ -24,19 +25,20 @@ p {
 /* select the input element with id of "firstname" */
 /* ID selectors ( specificity score of 100) */
 #firstname {
-  background-color: chocolate;
-  color: white;
+  background-color: rgba(189, 43, 43, 0.516);
 }
 
 /* class selector */
 /* .className is used to match elements with a specific class attribute */
 /* class selectors ( specificity score of 10) */
+/* RGB model: Red, Green, Blue */
 .e1 {
-  color: blueviolet;
+  color: rgba(72, 10, 10, 0.642);
 }
 
+/* hexadecimal model: 6 digit value */
 h3 {
-  color: green;
+  color: #00ff00;
 }
 
 div.center {
