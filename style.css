@@ -1,3 +1,45 @@
+/* What is a selector? */
+/* A selector is a pattern that matches elements in a document. */
+
+/* p is a selector that matches all <p> elements */
+/* select all p elements */
+/* Element selector - specify an element */
+/* Element selectors ( specificty score of 1) */
 p {
   color: red;
+  font-size: 20pt;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-style: italic;
+  text-align: justify;
+  text-transform: uppercase;
+}
+
+/* label {
+  color: teal;
+} */
+
+/* id selector */
+/* #id matches a single element */
+/* select the input element with id of "firstname" */
+/* ID selectors ( specificity score of 100) */
+#firstname {
+  background-color: chocolate;
+  color: white;
+}
+
+/* class selector */
+/* .className is used to match elements with a specific class attribute */
+/* class selectors ( specificity score of 10) */
+.e1 {
+  color: blueviolet;
+}
+
+h3 {
+  color: green;
+}
+
+div.center {
+  text-align: center;
+  width: 80%;
 }

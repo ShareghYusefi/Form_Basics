@@ -11,10 +11,6 @@
     <!-- Internal style sheet - applies to all elements defined on document -->
     <!-- Internal styles have the second highest precedence -->
     <style>
-      label {
-        color: teal;
-      }
-
       input {
         background-color: azure;
       }
@@ -23,13 +19,16 @@
   <body>
     <!-- Inline styling - directy applying css to elements -->
     <!-- Inline styles have the highest precedence -->
-    <h1 style="color: blue">Forms & Input Elements</h1>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut, facilis
-      veritatis enim quae eligendi atque dolorum voluptatum illum exercitationem
-      adipisci, autem minima mollitia! Obcaecati odio animi nemo cupiditate
-      natus.
-    </p>
+    <!-- Inline styles have a specificty score of 1000 -->
+    <div class="center">
+      <h1 style="color: blue">Forms & Input Elements</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut,
+        facilis veritatis enim quae eligendi atque dolorum voluptatum illum
+        exercitationem adipisci, autem minima mollitia! Obcaecati odio animi
+        nemo cupiditate natus.
+      </p>
+    </div>
 
     <form action="/process_form.php">
       <!-- input element can be used to collect information -->
@@ -72,7 +71,7 @@
       <!-- type radio -->
       <!-- Used when we have a fixed set of options -->
       <!-- type radio share name value so only 1 selection is allowed -->
-      <h3 for="shirt_size">Shirt Size</h3>
+      <h3 class="e1 p1" for="shirt_size">Shirt Size</h3>
       <input
         type="radio"
         name="shirt_size"
@@ -101,7 +100,7 @@
       <br />
 
       <!-- type checkbox - selecting multiple value -->
-      <h3>Colors</h3>
+      <h3 class="e1 p1">Colors</h3>
       <input type="checkbox" name="colors" value="blue" />Blue <br />
       <input type="checkbox" name="colors" value="red" />Red <br />
       <input type="checkbox" name="colors" value="purple" />Purple <br />
