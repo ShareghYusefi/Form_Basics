@@ -41,5 +41,10 @@ h3 {
 
 div.center {
   text-align: center;
-  width: 80%;
+  width: 80%; /* 80% of the parent elements width */
+}
+
+.dog {
+  width: 50%;
+  height: 100px;
 }
