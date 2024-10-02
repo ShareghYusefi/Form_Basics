@@ -47,6 +47,18 @@ div.center {
 }
 
 .dog {
-  width: 50%;
-  height: 100px;
+  width: 450px;
+  height: 250px;
+  background-image: url("german_shepherd.webp");
+  background-color: #00ff00;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* attribute selector [attribute="value"] */
+input[type="submit"] {
+  background-color: aqua;
+  color: blue;
+  text-align: right;
+  width: 100px;
 }
