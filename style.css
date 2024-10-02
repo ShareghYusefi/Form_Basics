@@ -62,3 +62,40 @@ input[type="submit"] {
   text-align: right;
   width: 100px;
 }
+
+/* pseudo class: added to a selector to signify a special state */
+input[type="submit"]:hover {
+  background-color: blue;
+  color: white;
+}
+
+input:hover {
+  background-color: yellow;
+}
+
+input:focus {
+  border: 4px solid green;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+/* pseudo classes for links */
+
+/* link has not been visited */
+a:link {
+  color: blue;
+}
+
+a:hover {
+  color: red;
+}
+/* When clicking a link */
+a:active {
+  color: green;
+}
+
+a:visited {
+  color: purple;
+}
