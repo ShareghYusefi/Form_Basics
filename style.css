@@ -53,7 +53,13 @@ div.center {
   background-color: #00ff00;
   background-repeat: no-repeat;
   background-size: cover;
+  border-width: 3px 5px 3px 5px;
+  border-color: blue red green yellow;
+  border-style: outset dashed hidden inset;
+  border-radius: 10px 20px 5px;
+  /* border: 3px solid blue; */
 }
+px
 
 /* attribute selector [attribute="value"] */
 input[type="submit"] {
@@ -61,12 +67,17 @@ input[type="submit"] {
   color: blue;
   text-align: right;
   width: 100px;
+  margin: 20px 40px;
 }
 
 /* pseudo class: added to a selector to signify a special state */
 input[type="submit"]:hover {
   background-color: blue;
   color: white;
+}
+
+div {
+  margin: 10px 20px 5px;
 }
 
 input:hover {
@@ -98,4 +109,16 @@ a:active {
 
 a:visited {
   color: purple;
+}
+
+a {
+  background-color: yellowgreen;
+  padding: 10px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 10px;
 }
