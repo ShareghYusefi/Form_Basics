@@ -15,6 +15,11 @@
         background-color: azure;
       }
     </style>
+
+    <!-- Javascript code -->
+     <script type="text/Javascript">
+      alert("This is the first alert!");
+     </script>
   </head>
   <body>
     <a href="index.html">Home</a>
@@ -23,11 +28,11 @@
     <!-- Inline styles have the highest precedence -->
     <!-- Inline styles have a specificty score of 1000 -->
     <div class="center">
-      <h1 style="color: blue">Forms & Input Elements</h1>
+      <h1>Forms & Input Elements</h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut,
         facilis veritatis enim quae eligendi atque dolorum voluptatum illum
-        exercitationem adipisci, autem minima mollitia! Obcaecati odio animi
+        <strong>exercitationem</strong> adipisci, autem minima mollitia! Obcaecati odio animi
         nemo cupiditate natus.
       </p>
     </div>
@@ -114,10 +119,10 @@
       <input type="checkbox" name="colors" value="yellow" />Yellow <br />
 
       <!-- submitting form -->
-       <!-- <div>
+       <div>
          <input type="submit" value="Order Shirt" />
-       </div> -->
-      <button type="submit">Order Shirt</button>
+       </div>
+      <button onclick="alert('This is an Alert!')" >Alert!</button>
     </form>
   </body>
 </html>

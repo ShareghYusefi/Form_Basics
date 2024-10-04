@@ -10,7 +10,7 @@ p {
   color: hsla(306, 66%, 49%, 0.8);
   font-size: 20pt;
   font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-style: italic;
   text-align: justify;
   text-transform: uppercase;
@@ -36,6 +36,10 @@ p {
   color: rgba(72, 10, 10, 0.642);
 }
 
+h1 {
+  color: blue;
+}
+
 /* hexadecimal model: 6 digit value */
 h3 {
   color: #00ff00;
@@ -59,7 +63,6 @@ div.center {
   border-radius: 10px 20px 5px;
   /* border: 3px solid blue; */
 }
-px
 
 /* attribute selector [attribute="value"] */
 input[type="submit"] {
